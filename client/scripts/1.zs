@@ -82,3 +82,46 @@ recipes.addShaped(<tconstruct:soil>,
 [[<minecraft:clay_ball>, <minecraft:sand>, <minecraft:clay_ball>],
 [<minecraft:gravel>, <minecraft:clay_ball>, <minecraft:gravel>],
 [<minecraft:clay_ball>, <minecraft:sand>, <minecraft:clay_ball>]]);
+
+
+//Improved backpacks
+recipes.remove(<improvedbackpacks:backpack>);
+
+recipes.addShaped(<improvedbackpacks:backpack>,
+[[<improvedbackpacks:tanned_leather>, <minecraft:iron_block>, <improvedbackpacks:tanned_leather>],
+[<minecraft:gold_block>, <improvedbackpacks:upgrade:2>, <minecraft:gold_block>],
+[<minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>]]);
+
+
+recipes.remove(<improvedbackpacks:blank_upgrade>);
+
+recipes.addShaped(<improvedbackpacks:blank_upgrade>,
+[[<improvedbackpacks:tanned_leather>, <improvedbackpacks:tanned_leather>, <improvedbackpacks:tanned_leather>],
+[<minecraft:string>, <minecraft:string>, <minecraft:string>],
+[<improvedbackpacks:tanned_leather>, <improvedbackpacks:tanned_leather>, <improvedbackpacks:tanned_leather>]]);
+
+
+recipes.remove(<improvedbackpacks:upgrade:1>);
+recipes.remove(<improvedbackpacks:upgrade:2>);
+recipes.remove(<improvedbackpacks:upgrade:3>);
+recipes.remove(<improvedbackpacks:upgrade:4>);
+
+recipes.addShaped(<improvedbackpacks:upgrade:1>,
+[[<minecraft:stone>, <minecraft:iron_ingot>, <minecraft:stone>],
+[<minecraft:stone>, <improvedbackpacks:blank_upgrade>, <minecraft:stone>],
+[<minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>]]);
+
+recipes.addShaped(<improvedbackpacks:upgrade:2>,
+[[<minecraft:iron_ingot>, <minecraft:iron_block>, <minecraft:iron_ingot>],
+[<minecraft:iron_block>, <improvedbackpacks:blank_upgrade>, <minecraft:iron_block>],
+[<minecraft:iron_ingot>, <minecraft:iron_block>, <minecraft:iron_ingot>]]);
+
+recipes.addShaped(<improvedbackpacks:upgrade:3>,
+[[<minecraft:gold_ingot>, <minecraft:gold_block>, <minecraft:gold_ingot>],
+[<minecraft:gold_block>, <improvedbackpacks:blank_upgrade>, <minecraft:gold_block>],
+[<minecraft:gold_ingot>, <minecraft:gold_block>, <minecraft:gold_ingot>]]);
+
+recipes.addShaped(<improvedbackpacks:upgrade:4>,
+[[<minecraft:diamond_block>, <minecraft:diamond_block>, <minecraft:diamond_block>],
+[<minecraft:diamond_block>, <improvedbackpacks:upgrade:3>, <minecraft:diamond_block>],
+[<minecraft:diamond_block>, <minecraft:diamond_block>, <minecraft:diamond_block>]]);
