@@ -190,22 +190,8 @@ furnace.addRecipe(<refinedstorage:quartz_enriched_iron> * 8, <refinedstorage:qua
 
 //#endregion
 
-//#region Minecraft
-
-//#region Other
-recipes.addShaped(<minecraft:leather>,
-[[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>],
-[<minecraft:rotten_flesh>, <minecraft:leaves>, <minecraft:rotten_flesh>],
-[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
-
-recipes.addShaped(<minecraft:leather>,
-[[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>],
-[<minecraft:rotten_flesh>, <minecraft:leaves:2>, <minecraft:rotten_flesh>],
-[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
-
-//#endregion
-
 //#region Armor
+//#region Minecraft armor
 //#region Add craft of chainmail  armor
 recipes.addShaped(<minecraft:chainmail_helmet>,
 [[<minecraft:iron_nugget>, <minecraft:iron_block>, <minecraft:iron_nugget>],
@@ -279,6 +265,49 @@ recipes.addShaped(<minecraft:diamond_boots>,
 [<minecraft:diamond>, null, <minecraft:diamond>],
 [<minecraft:diamond>, null, <minecraft:diamond>]]);
 //endregion
+//#endregion
+//#region IC2 armor
+//#region bronze
+recipes.remove(<ic2:bronze_helmet>);
+recipes.addShaped(<ic2:bronze_helmet>,
+[[<ic2:ingot:1>, <ic2:resource:5>, <ic2:ingot:1>],
+[<ic2:ingot:1>, null, <ic2:ingot:1>],
+[null, null, null]]);
+
+recipes.remove(<ic2:bronze_chestplate>);
+recipes.addShaped(<ic2:bronze_chestplate>,
+[[<ic2:ingot:1>, null, <ic2:ingot:1>],
+[<ic2:ingot:1>, <ic2:resource:5>, <ic2:ingot:1>],
+[<ic2:ingot:1>, <ic2:ingot:1>, <ic2:ingot:1>]]);
+
+recipes.remove(<ic2:bronze_leggings>);
+recipes.addShaped(<ic2:bronze_leggings>,
+[[<ic2:ingot:1>, <ic2:resource:5>, <ic2:ingot:1>],
+[<ic2:ingot:1>, null, <ic2:ingot:1>],
+[<ic2:ingot:1>, null, <ic2:ingot:1>]]);
+
+recipes.remove(<ic2:bronze_boots>);
+recipes.addShaped(<ic2:bronze_boots>,
+[[<ic2:ingot:1>, null, <ic2:ingot:1>],
+[<ic2:ingot:1>, null, <ic2:ingot:1>],
+[<ic2:ingot:1>, null, <ic2:ingot:1>]]);
+//#endregion
+//endregion
+
+//#endregion
+
+//#region Minecraft
+
+//#region Other
+recipes.addShaped(<minecraft:leather>,
+[[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>],
+[<minecraft:rotten_flesh>, <minecraft:leaves>, <minecraft:rotten_flesh>],
+[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
+
+recipes.addShaped(<minecraft:leather>,
+[[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>],
+[<minecraft:rotten_flesh>, <minecraft:leaves:2>, <minecraft:rotten_flesh>],
+[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
 
 //#endregion
 
@@ -294,6 +323,14 @@ recipes.remove(<ic2:resource:7>);
 recipes.remove(<ic2:resource:8>);
 recipes.remove(<ic2:resource:9>);
 recipes.remove(<ic2:resource:15>);
+
+//#endregion
+
+//#region XP Tome
+recipes.remove(<xpbook:xp_book>);
+recipes.remove(<xpbook:xp_book:1395>);
+recipes.addShapeless(<xpbook:xp_book:1395>,
+[<minecraft:ender_pearl>, <minecraft:book>]);
 
 //#endregion
 
