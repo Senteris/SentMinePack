@@ -163,7 +163,22 @@ recipes.addShaped(<improvedbackpacks:upgrade:4>,
 
 //#endregion
 
+//#region Refined storage
+recipes.remove(<refinedstorage:quartz_enriched_iron>);
+recipes.remove(<refinedstorage:quartz_enriched_iron_block>);
+
+recipes.addShaped(<refinedstorage:quartz_enriched_iron_block>,
+[[null, <minecraft:iron_block>, null],
+[<minecraft:quartz_block>, <minecraft:quartz_block>, <minecraft:quartz_block>],
+[null, <minecraft:iron_block>, null]]);
+
+furnace.addRecipe(<refinedstorage:quartz_enriched_iron> * 8, <refinedstorage:quartz_enriched_iron_block>, 1);
+
+//#endregion
+
 //#region Minecraft
+
+//#region Other
 recipes.addShaped(<minecraft:leather>,
 [[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>],
 [<minecraft:rotten_flesh>, <minecraft:leaves>, <minecraft:rotten_flesh>],
@@ -174,11 +189,13 @@ recipes.addShaped(<minecraft:leather>,
 [<minecraft:rotten_flesh>, <minecraft:leaves:2>, <minecraft:rotten_flesh>],
 [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
 
+//#endregion
+
 //#region Armor
 //#region Add craft of chainmail  armor
 recipes.addShaped(<minecraft:chainmail_helmet>,
 [[<minecraft:iron_nugget>, <minecraft:iron_block>, <minecraft:iron_nugget>],
-[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],
+[<minecraft:iron_nugget>, null, <minecraft:iron_nugget>],
 [null, null, null]]);
 
 recipes.addShaped(<minecraft:chainmail_chestplate>,
@@ -248,6 +265,21 @@ recipes.addShaped(<minecraft:diamond_boots>,
 [<minecraft:diamond>, null, <minecraft:diamond>],
 [<minecraft:diamond>, null, <minecraft:diamond>]]);
 //endregion
+
+//#endregion
+
+//#region Expensive blocks
+recipes.remove(<minecraft:iron_block>);
+recipes.remove(<minecraft:gold_block>);
+recipes.remove(<minecraft:lapis_block>);
+recipes.remove(<minecraft:emerald_block>);
+recipes.remove(<minecraft:redstone_block>);
+recipes.remove(<ic2:resource:5>);
+recipes.remove(<ic2:resource:6>);
+recipes.remove(<ic2:resource:7>);
+recipes.remove(<ic2:resource:8>);
+recipes.remove(<ic2:resource:9>);
+recipes.remove(<ic2:resource:15>);
 
 //#endregion
 
