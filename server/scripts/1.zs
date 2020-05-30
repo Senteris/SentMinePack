@@ -59,6 +59,20 @@ recipes.remove(<ic2:alloy_chestplate>);
 //other
 recipes.remove(<ic2:te:2>);
 
+//removing from JEI
+mods.jei.JEI.removeAndHide(<ic2:quantum_chestplate>);
+mods.jei.JEI.removeAndHide(<ic2:quantum_boots>);
+mods.jei.JEI.removeAndHide(<ic2:quantum_helmet>);
+mods.jei.JEI.removeAndHide(<ic2:quantum_leggings>);
+mods.jei.JEI.removeAndHide(<ic2:nano_helmet>);
+mods.jei.JEI.removeAndHide(<ic2:nano_chestplate>);
+mods.jei.JEI.removeAndHide(<ic2:nano_leggings>);
+mods.jei.JEI.removeAndHide(<ic2:nano_boots>);
+mods.jei.JEI.removeAndHide(<ic2:nano_saber>);
+mods.jei.JEI.removeAndHide(<ic2:alloy_chestplate>);
+
+mods.jei.JEI.removeAndHide(<ic2:te:2>);
+
 //#endregion
 
 //#region Update IC2 crafts
