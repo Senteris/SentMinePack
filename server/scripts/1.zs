@@ -134,6 +134,11 @@ recipes.addShaped(<tconstruct:slimesling:4>,
 //#endregion
 
 //#region Improved backpacks
+recipes.remove(<improvedbackpacks:bound_leather>);
+
+recipes.addShapeless(<improvedbackpacks:bound_leather> * 2,
+[<minecraft:leather>, <minecraft:string>, <minecraft:string>, <minecraft:string>, <minecraft:leather>]);
+
 recipes.remove(<improvedbackpacks:backpack>);
 
 recipes.addShaped(<improvedbackpacks:backpack>,
@@ -299,12 +304,12 @@ recipes.addShaped(<ic2:bronze_boots>,
 //#region Minecraft
 
 //#region Other
-recipes.addShaped(<minecraft:leather>,
+recipes.addShaped(<minecraft:leather> * 3,
 [[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>],
 [<minecraft:rotten_flesh>, <minecraft:leaves>, <minecraft:rotten_flesh>],
 [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
 
-recipes.addShaped(<minecraft:leather>,
+recipes.addShaped(<minecraft:leather> * 3,
 [[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>],
 [<minecraft:rotten_flesh>, <minecraft:leaves:2>, <minecraft:rotten_flesh>],
 [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
