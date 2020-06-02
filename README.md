@@ -1,6 +1,9 @@
 # SentMinePack - Modpack for minecraft 1.12.2
 
 
+Server for the modpack - https://github.com/Senteris/SentMinePack-server
+
+
 This modpack has few mods created for comfortable and hard survival. You should not have a "super cool server with 312TB RAM and 128 core processor" anymore. Just pregenerate the world and enjoy.
 
 
