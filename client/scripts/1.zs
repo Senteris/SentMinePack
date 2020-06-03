@@ -1,4 +1,20 @@
-//#region Enchanting+
+//#region Enchanting+ and books
+recipes.remove(<minecraft:book>);
+recipes.remove(<minecraft:bookshelf>);
+
+
+recipes.addShaped(<minecraft:book>,
+[[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],
+[<minecraft:paper>, <minecraft:paper>, <minecraft:leather>],
+[<minecraft:paper>, <minecraft:leather>, null]]);
+
+
+recipes.addShaped(<minecraft:bookshelf>,
+[[<minecraft:book>, <minecraft:book>, <minecraft:book>],
+[<minecraft:book>, <minecraft:chest>, <minecraft:book>],
+[<minecraft:book>, <minecraft:book>, <minecraft:book>]]);
+
+
 recipes.remove(<eplus:decorative_book>);
 recipes.remove(<eplus:decorative_book:1>);
 recipes.remove(<eplus:decorative_book:2>);
@@ -134,6 +150,11 @@ recipes.addShaped(<tconstruct:slimesling:4>,
 //#endregion
 
 //#region Improved backpacks
+recipes.remove(<improvedbackpacks:bound_leather>);
+
+recipes.addShapeless(<improvedbackpacks:bound_leather> * 2,
+[<minecraft:leather>, <minecraft:string>, <minecraft:string>, <minecraft:string>, <minecraft:leather>]);
+
 recipes.remove(<improvedbackpacks:backpack>);
 
 recipes.addShaped(<improvedbackpacks:backpack>,
@@ -296,15 +317,23 @@ recipes.addShaped(<ic2:bronze_boots>,
 
 //#endregion
 
+//#region XP Tome
+recipes.remove(<xpbook:xp_book>);
+recipes.remove(<xpbook:xp_book:1395>);
+recipes.addShapeless(<xpbook:xp_book:1395>,
+[<minecraft:book>, <minecraft:chest>]);
+
+//#endregion
+
 //#region Minecraft
 
 //#region Other
-recipes.addShaped(<minecraft:leather>,
+recipes.addShaped(<minecraft:leather> * 3,
 [[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>],
 [<minecraft:rotten_flesh>, <minecraft:leaves>, <minecraft:rotten_flesh>],
 [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
 
-recipes.addShaped(<minecraft:leather>,
+recipes.addShaped(<minecraft:leather> * 3,
 [[<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>],
 [<minecraft:rotten_flesh>, <minecraft:leaves:2>, <minecraft:rotten_flesh>],
 [<minecraft:rotten_flesh>, <minecraft:rotten_flesh>, <minecraft:rotten_flesh>]]);
@@ -323,14 +352,6 @@ recipes.remove(<ic2:resource:7>);
 recipes.remove(<ic2:resource:8>);
 recipes.remove(<ic2:resource:9>);
 recipes.remove(<ic2:resource:15>);
-
-//#endregion
-
-//#region XP Tome
-recipes.remove(<xpbook:xp_book>);
-recipes.remove(<xpbook:xp_book:1395>);
-recipes.addShapeless(<xpbook:xp_book:1395>,
-[<minecraft:ender_pearl>, <minecraft:book>]);
 
 //#endregion
 
