@@ -20,3 +20,8 @@ For comfortable game you need just 2GB RAM. If your server have not 2GB RAM, del
 `powerful-client` - client only mods. Install it if you have not problem with perfomance.
 
 `conflicts-with-shaders` - client only mods. Install it if you do not use a not-vanila shaders and if you have not problem with perfomance.
+
+
+## And
+
+Please don't turn on `spawn-npcs` at server.properties. Villagers greatly facilitate the extraction of emeralds.
